@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: "deployment-service-blog-golang"
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: "service-blog-golang"
+  template:
+    metadata:
+      labels:
+        app: "service-blog-golang"
+    spec:
+      containers:
+        - name: "service-blog-golang"
+          image: "sobrian.azurecr.io/service-blog-golang"
+          ports:
+          - containerPort: 8080

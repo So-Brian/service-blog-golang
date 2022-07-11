@@ -1,0 +1,15 @@
+###
+
+GET http://localhost:8080/ HTTP/1.1
+
+###
+
+GET http://localhost:8080/weatherforecast/ HTTP/1.1
+
+###
+
+GET http://localhost:8080/weatherforecast/cities HTTP/1.1
+
+###
+
+GET http://localhost:8080/weatherforecast/weathers HTTP/1.1
